@@ -1,11 +1,14 @@
 import React from 'react';
 import './App.css';
+import Navbar from './components/Navbar';
+import HomePage from './components/HomePage';
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold text-red-600">
-      Simple React Typescript Tailwind Sample project
-    </h1>
+    <>
+    {/* <Navbar/> */}
+    <HomePage/>
+    </>
   );  
 }
 export default App;
