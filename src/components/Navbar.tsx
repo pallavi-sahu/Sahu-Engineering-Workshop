@@ -1,28 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Typography from '@mui/material/Typography';
-import Accordion from '@mui/material/Accordion';
+import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 
-const carousel = [
 
-]
 const Navbar = () => {
+
+    const [isOpenAccordian, setIsOpenAccordian] = useState<Boolean>(false);
+    const handleAccordian = () => {
+        setIsOpenAccordian(!isOpenAccordian)
+    }
     return (
-        <div>
+       <>
+        <div className='flex justify-between items-center p-2 border-b border-bgrey shadow-inner'>
             <div>
-            <Typography variant="h5">
-                SAHU Welding and Engineering Workshop
-            </Typography>
+                <p className='text-2xl text-primary-orange font-bold'>
+                    <span className='text-primary-blue'>SAHU</span> Welding and Engineering Workshop
+                </p>
             </div>
-            <div>
+            <div className='hidden md:flex gap-10'>
                 <Typography variant='body2'>Home</Typography>
                 <Typography variant='body2'>About Us</Typography>
                 <Typography variant='body2'>Contact</Typography>
             </div>
-            <div>
-                {/* <Accordion children={'About Us'}/> */}
+            <div className='md:hidden cursor-pointer' onClick={handleAccordian}>
+                <DensityMediumIcon/>
             </div>
+            </div>
+            {
+                isOpenAccordian &&
+                <>
+                    <div className='md:hidden'>
+                        <Typography variant='body2'>Home</Typography>
+                        <Typography variant='body2'>About Us</Typography>
+                        <Typography variant='body2'>Contact</Typography>
+                    </div>
+                </>
+            }
+       </>
 
-        </div>
+        
     )
 }
 
