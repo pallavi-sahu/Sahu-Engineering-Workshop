@@ -10,7 +10,8 @@ module.exports = {
     extend: {
       colors: {
         'primary-blue': '#1F499E',
-        'primary-orange': '#F59121'
+        'primary-orange': '#F59121',
+         bgrey : '#D9D9D9'
       },
       fontFamily:{
         sans: ['Inter', 'ui-sans-serif', 'system-ui'],
