@@ -6,11 +6,11 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Footer = () => {
   return (
-    <div className='md:flex flex-row justify-between items-center p-10'>
-        <p className='flex justify-center items-center'><MailOutlineIcon/> madanlalsahu40@gmail.com</p>
-        <p className='flex justify-center items-center'><WifiCalling3Icon/>+91-7999691268</p>
-        <p className='flex justify-center items-center'><WhatsAppIcon/>+91-9752884994</p>
-        <p className='flex justify-center items-center'><HomeIcon/>Ranitarai (Road)</p>
+    <div className='grid grid-cols-auto xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center p-10'>
+        <p className='flex justify-center items-center gap-2'><MailOutlineIcon/> madanlalsahu40@gmail.com</p>
+        <p className='flex justify-center items-center gap-2'><WifiCalling3Icon/>+91-7999691268</p>
+        <p className='flex justify-center items-center gap-2'><WhatsAppIcon/>+91-9752884994</p>
+        <p className='flex justify-center items-center gap-2'><HomeIcon/>Ranitarai (Road), District-Balod (C.G)</p>
     </div>
   )
 }
