@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Typography from '@mui/material/Typography';
 import DensityMediumIcon from '@mui/icons-material/DensityMedium';
 import { Accordion, AccordionDetails, AccordionSummary } from '@mui/material';
 
@@ -67,11 +66,8 @@ const Navbar = () => {
                         })
                     }
                 </>
-
             }
         </>
-
-
     )
 }
 
