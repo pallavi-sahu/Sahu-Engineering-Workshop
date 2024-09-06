@@ -67,58 +67,118 @@ const Contact = () => {
                     })
                 }
             </div>
-            <div className='flex flex-col justify-conter items-center bg-primary-blue text-color-white p-4'>
-                <p>Contact</p>
-                <Box sx={{ flexGrow: 1 }}>
-                    <Grid container spacing={2}>
-                        <Grid item xs={12} md={6}>
-                        <FormControl defaultValue="" required>
-                        <label>First Name</label>
+            <div className='flex flex-col justify-center items-center bg-primary-blue text-color-white p-4'>
+                <p className='font-semibold text-2xl text-white mb-4'>Contact Us</p>
+                <Box sx={{ flexGrow: 1 }} className="w-full max-w-screen-md">
+                    <Grid container spacing={2} className="flex flex-col md:flex-row">
+                        <Grid item xs={12} md={6} className="w-full">
+                        <FormControl defaultValue="" required className="w-full">
+                        <label className='text-white'>First Name</label>
                         <TextField
                             id="outlined-secondary"
                             variant="outlined"
                             color="secondary"
                             placeholder='Enter First Name'
+                            sx={{
+                                backgroundColor: 'white',
+                                input: { color: 'black' },
+                                borderRadius:"5px"
+                            }}
                         />
                     </FormControl>
                         </Grid>
-                        <Grid item xs={12} md={6}>
-                        <FormControl defaultValue="" required>
-                        <label>Last Name</label>
+                        <Grid item xs={12} md={6} className="w-full">
+                        <FormControl defaultValue="" required className="w-full">
+                        <label className='text-white'>Last Name</label>
                         <TextField
                             id="outlined-secondary"
                             variant="outlined"
                             color="secondary"
                             placeholder='Enter Last Name'
+                            sx={{
+                                backgroundColor: 'white',
+                                input: { color: 'black' },
+                                borderRadius:"5px"
+                            }}
                         />
                     </FormControl>
                         </Grid>
-                        <Grid item xs={12}>
-                        <FormControl defaultValue="" required>
-                        <label>Mobile Number</label>
+                        <Grid item xs={12} md={6} className="w-full">
+                        <FormControl defaultValue="" required className="w-full">
+                        <label className='text-white'>Mobile Number</label>
                         <TextField
                             id="outlined-secondary"
                             variant="outlined"
                             color="secondary"
                             placeholder='Enter Mobile Number'
+                            sx={{
+                                backgroundColor: 'white',
+                                input: { color: 'black' },
+                                borderRadius:"5px"
+                            }}
                         />
                     </FormControl>
                         </Grid>
-                        <Grid item xs={12}>
-                        <FormControl defaultValue="" required>
-                        <label>Email</label>
+                        <Grid item xs={12} md={6} className="w-full">
+                        <FormControl defaultValue="" required className="w-full">
+                        <label className='text-white'>Email</label>
                         <TextField
                             id="outlined-secondary"
                             variant="outlined"
                             color="secondary"
                             placeholder='Enter Your Email'
+                            sx={{
+                                backgroundColor: 'white',
+                                input: { color: 'black' },
+                                borderRadius:"5px"
+                            }}
+
+                        />
+                    </FormControl>
+                        </Grid>
+
+                        <Grid item xs={12} className="w-full">
+                        <FormControl defaultValue="" required className="w-full">
+                        <label className='text-white'>Address</label>
+                        <TextField
+                            id="outlined-secondary"
+                            variant="outlined"
+                            color="secondary"
+                            multiline
+                            rows={2}
+                            placeholder='Type here...'
+                            sx={{
+                                backgroundColor: 'white',
+                                input: { color: 'black' },
+                                borderRadius:"5px"
+                            }}
+
+                        />
+                    </FormControl>
+                        </Grid>
+
+                        <Grid item xs={12} className="w-full">
+                        <FormControl defaultValue="" required className="w-full">
+                        <label className='text-white'>Leave Message here for your queries and orders</label>
+                        <TextField
+                            multiline
+                            rows={3}
+                            id="outlined-secondary"
+                            variant="outlined"
+                            color="secondary"
+                            placeholder='Type here...'
+                            sx={{
+                                backgroundColor: 'white',
+                                input: { color: 'black' },
+                                borderRadius:"5px"
+                            }}
 
                         />
                     </FormControl>
                         </Grid>
                     </Grid>
                 </Box>
-                <Button className='border-2 p4'>Submit</Button>
+                <button className='border-2 rounded-md px-4 py-2 mt-4 bg-white text-primary-blue text-center'>Submit</button>
             </div>
         </div>
     )
