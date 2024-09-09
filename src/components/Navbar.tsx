@@ -31,13 +31,13 @@ const Navbar = () => {
     }
     return (
         <>
-            <div className='flex justify-between items-center p-2 border-b border-bgrey shadow-inner'>
+            <div className='flex justify-between items-center p-2 border-b border-bgrey shadow-inner pt-5 bg-white'>
                 <div>
                     <p className='text-2xl text-primary-orange font-bold pl-5'>
                         <span className='text-primary-blue'>SAHU</span> Welding and Engineering Workshop
                     </p>
                 </div>
-                <div className='hidden md:flex gap-10 pr-10'>
+                <div className='hidden md:flex gap-10 pr-10 font-bold'>
                     <p className='text-primary-blue'>Home</p>
                     <p className='text-primary-blue'>About Us</p>
                     <p className='text-primary-blue'>Contact</p>
