@@ -45,8 +45,8 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
 const Contact = () => {
     return (
-        <div>
-            <div className='grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 gap-10 justify-items-center items-center p-10'>
+        <div className='flex flex-col md:flex-row justify-center items-center p-10 border-b-2 border-bgrey' style={{ boxShadow: 'inset 0 -4px 4px rgba(0, 0, 0, 0.1)' }}>
+            <div className='flex flex-col gap-10 justify-center space-y-4 md:space-y-0 md:space-x-4 items-center p-10 '>
                 {
                     services.map((service) => {
                         return (
@@ -67,7 +67,7 @@ const Contact = () => {
                     })
                 }
             </div>
-            <div className='flex flex-col justify-center items-center bg-primary-blue text-color-white p-4'>
+            <div className='flex flex-col justify-center items-center bg-primary-blue text-color-white p-4 rounded-md'>
                 <p className='font-semibold text-2xl text-white mb-4'>Contact Us</p>
                 <Box sx={{ flexGrow: 1 }} className="w-full max-w-screen-md">
                     <Grid container spacing={2} className="flex flex-col md:flex-row">
