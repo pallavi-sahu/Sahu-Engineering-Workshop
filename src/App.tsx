@@ -9,12 +9,17 @@ import Categories from './components/Categories';
 function App() {
   return (
     <>
-    <Navbar/>
-    <HomePage/>
-    <Categories/>
-    <Contact/>
-    <Footer/>
-    </>
-  );  
+      <div className="fixed top-0 left-0 w-full z-50">
+        <Navbar />
+      </div>    
+      <div className="pt-16 pb-16 ">
+        <HomePage />
+        <Categories />
+        <Contact />
+      </div>
+      <div className="fixed bottom-0 left-0 w-full z-50">
+        <Footer />
+      </div>    </>
+  );
 }
 export default App;
