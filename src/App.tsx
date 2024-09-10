@@ -5,6 +5,7 @@ import HomePage from './components/HomePage';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Categories from './components/Categories';
+import IndividualCategory from './components/IndividualCategory';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <div className="pt-16 pb-16 ">
         <HomePage />
         <Categories />
+        <IndividualCategory/>
         <Contact />
       </div>
       <div className="fixed bottom-0 left-0 w-full z-50">
