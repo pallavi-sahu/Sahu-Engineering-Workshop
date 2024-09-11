@@ -36,7 +36,7 @@ const Categories = () => {
             {
                 categories.map((cat) => {
                     return (
-                        <div className='border-2 border-border-orange rounded-md p-4 flex flex-col gap-5 items-center justify-between'>
+                        <div className='border border-border-orange rounded-md p-4 flex flex-col gap-5 items-center justify-between'>
                             <p className='text-center md:text-left text-xl font-bold text-primary-blue'>{cat.category}</p>
                             <div className='rounded-md flex justify-center items-center '>
                                 <img src={cat.image} alt={`catogory ${cat.id}`} className="h-32 w-64 object-cover rounded-md"/>
