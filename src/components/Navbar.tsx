@@ -31,7 +31,7 @@ const Navbar = () => {
     }
     return (
         <>
-            <div className='flex justify-between items-center p-2 border-b border-bgrey shadow-inner pt-5 bg-white'>
+            <div className='flex justify-between items-center p-2 border-b border-bgrey shadow-md pt-5 bg-white'>
                 <div>
                     <p className='text-2xl text-primary-orange font-bold pl-5'>
                         <span className='text-primary-blue'>SAHU</span> Welding and Engineering Workshop
