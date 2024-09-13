@@ -49,12 +49,8 @@ const Navbar = () => {
             {
                 isOpenAccordian &&
                 <>
-                    {/* <div className='md:hidden'>
-                        <Typography variant='body2'>Home</Typography>
-                        <Typography variant='body2'>About Us</Typography>
-                        <Typography variant='body2'>Contact</Typography>
-                    </div> */}
-                    {
+                    
+                    {/* {
                         menuItems.map((item:menuItem)=>{
                             <Accordion>
                         <AccordionSummary id="panel-header" aria-controls="panel-content">
@@ -64,7 +60,7 @@ const Navbar = () => {
                         </AccordionSummary>
                     </Accordion>
                         })
-                    }
+                    } */}
                 </>
             }
         </>
