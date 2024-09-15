@@ -1,74 +1,28 @@
 {
   "name": "welding-workshop",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/icons-material": "^6.0.1",
-    "@mui/material": "^6.0.1",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "@types/jest": "^27.5.2",
-    "@types/node": "^16.18.106",
-    "@types/react": "^18.3.4",
-    "@types/react-dom": "^18.3.0",
-    "husky": "^9.1.5",
-    "lint-staged": "^15.2.9",
-    "prettier": "^3.3.3",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-material-ui-carousel": "^3.4.2",
-    "react-router-dom": "^6.26.1",
-    "react-scripts": "5.0.1",
-    "react-styleguidist": "^13.1.3",
-    "sass": "^1.77.8",
-    "web-vitals": "^2.1.4"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
-      "prettier --write"
-    ]
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "styleguide": "styleguidist server",
-    "styleguide:build": "styleguidist build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "client": "npm start --prefix client",
+    "server": "npm run dev --prefix server",
+    "dev": "concurrently \"npm run client\" \"npm run server\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pallavi-sahu/Sahu-Engineering-Workshop.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pallavi-sahu/Sahu-Engineering-Workshop/issues"
   },
-  "devDependencies": {
-    "autoprefixer": "^10.4.20",
-    "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.10",
-    "ts-loader": "^9.5.1",
-    "typescript": "^4.9.5",
-    "webpack": "^5.94.0",
-    "webpack-cli": "^5.1.4"
+  "homepage": "https://github.com/pallavi-sahu/Sahu-Engineering-Workshop#readme",
+  "dependencies": {
+    "concurrently": "^9.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
   }
 }
