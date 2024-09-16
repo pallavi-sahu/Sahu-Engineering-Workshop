@@ -6,7 +6,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 
 const Footer = () => {
   return (
-    <div className='grid grid-cols-auto xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center p-5 bg-white shadow-lg border-t-2'>
+    <div className='grid grid-cols-auto xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 justify-center items-center p-5 bg-white shadow-lg border-t-2 mt-5'>
         <p className='flex justify-center items-center gap-2'><MailOutlineIcon/> madanlalsahu40@gmail.com</p>
         <p className='flex justify-center items-center gap-2'><WifiCalling3Icon/>+91-7999691268</p>
         <p className='flex justify-center items-center gap-2'><WhatsAppIcon/>+91-9752884994</p>
