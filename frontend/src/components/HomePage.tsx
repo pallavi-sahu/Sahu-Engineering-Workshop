@@ -22,7 +22,7 @@ const images: object[] = [
 ]
 const HomePage = () => {
     return (
-        <div className='flex flex-col md:flex-row border-b-2 border-bgrey p-2 md:p-10'>
+        <div className='flex flex-col md:flex-row border-b-2 border-bgrey p-2 md:p-10 mt-10 md:mt-0'>
             <div className='md:w-1/2 p-4'>
                 <p className='text-primary-blue text-4xl font-bold mb-2'>Transforming Metal into Masterpieces</p>
                 <p className='text-primary-orange text-3xl font-bold mb-2'>From welding work to custom steel solution</p>
@@ -33,7 +33,7 @@ const HomePage = () => {
                 <Carousel
                 animation='slide'
                 indicators = {false}
-                navButtonsAlwaysVisible = {true}
+                // navButtonsAlwaysVisible = {true}
                 autoPlay = {true}
                 NextIcon={<ArrowForwardIosIcon/>}
                 PrevIcon={<ArrowBackIosIcon/>}
